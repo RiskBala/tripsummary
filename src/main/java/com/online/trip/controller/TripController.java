@@ -18,7 +18,7 @@ public class TripController {
 	@Autowired
 	private TripService tripService;
 	
-	@RequestMapping(value = "trip-summary/trip", method = RequestMethod.GET)
+	@RequestMapping(value = "trip-summary/v1/trip", method = RequestMethod.GET)
 	@ResponseBody
 	public List<TripSummary> getTripSummary(@RequestHeader(value = "userId", required = true) String userId,
 			@RequestHeader(value = "roles", required = true) String roles) {
